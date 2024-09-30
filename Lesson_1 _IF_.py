@@ -6,7 +6,7 @@ def int_random(number_random):
 number_random =0
 exit_while_1=0
 while exit_while_1 == 0:
-    number_random =int_random(number_random)
+    number_random = int(input("Введите число: "))
     if number_random == 5:
         print("Победа")
         exit_while_1+=1
@@ -21,7 +21,7 @@ while exit_while_1 == 0:
         exit_while_1+=1
     else:
         print("Проиграл")
-        user_input = input("Продолжить? 1 - да, 2 - закончить.")
+        user_input = int( input("Продолжить? 1 - да, 2 - закончить."))
         if user_input == 1:
             exit_while_1=0
         elif user_input == 2:
